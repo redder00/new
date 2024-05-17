@@ -1,0 +1,17 @@
+import random
+
+def generate_lottery_number():
+    # Create an empty list to store the lottery numbers
+    lottery_number = []
+
+    # Generate seven random numbers and add them to the list
+    for _ in range(7):
+        random_number = random.randint(0, 9)
+        lottery_number.append(random_number)
+
+    # Print the contents of the list
+    for number in lottery_number:
+        print(number, end='')
+
+# Run the function to generate and display the lottery number
+generate_lottery_number()
